@@ -1,0 +1,194 @@
+skill.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+ <style>
+    body {
+  background-color: #0f0f0f;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background: rgb(12, 12, 122);
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(188, 188, 209);
+    font-size: 1.04rem;
+}
+
+
+.skills-section {
+  text-align: center;
+  padding: 80px 20px;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 9.5rem;
+  color: #a3ff12;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 35px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skill-card {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 40px 0;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.skill-card i {
+  font-size: 65px;
+  margin-bottom: 15px;
+}
+
+.skill-card p {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #ddd;
+  font-weight: 500;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(163, 255, 18, 0.5);
+}
+.close-btn {
+            text-align: center;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background:blueviolet;
+            color: white;
+            text-decoration: none;
+            border-bottom: 5px;
+        
+            justify-content: space-between;
+            font-size: 75px;
+
+        }
+     
+ </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+   <header>
+        <nav>
+            <div class="left">Deepali's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="project.html">project</a></li>
+                    <li><a href="/">Certificate</a></li>
+                    <li><a href="Contact.html">contact</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+  <section class="skills-section">
+    <h2 class="title">SKILLS</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <i class="fa-brands fa-html5" style="color:#e34c26;"></i>
+        <p>HTML</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-css3-alt" style="color:#2965f1;"></i>
+        <p>CSS</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-js" style="color:#f7df1e;"></i>
+        <p>JavaScript</p>
+      </div>
+
+     
+      
+
+      <div class="skill-card">
+        <i class="fa-brands fa-java" style="color:#f89820;"></i>
+        <p>Java</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-python" style="color:#3776ab;"></i>
+        <p>Python</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-database" style="color:#00758f;"></i>
+        <p>MySQL</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-c" style="color:#00599C;"></i>
+        <p>C</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-c" style="color:#f89820;"></i>
+        <p>C++</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-code" style="color:#00aaff;"></i>
+        <p>VS Code</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-server" style="color:#336791;"></i>
+        <p>JDBC</p>
+      </div>
+
+    </div>
+  </section>
+  
+
+
+</body>
+</html>

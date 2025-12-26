@@ -1,0 +1,246 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Section</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0d0d0d;
+            color: #fff;
+        }
+
+        /* Navbar */
+        nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background: rgb(12, 12, 122);
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(188, 188, 209);
+    font-size: 1.04rem;
+}
+
+        .traits div{
+            color: #ddd;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            
+        }
+        .traits div:hover{
+            background-color: blue;
+            color: white;
+        }
+
+
+        .core-values:hover {
+            color: #ff9800;
+        }
+
+        /* About Section */
+        .about {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+            font-size: 22px;
+        }
+
+        .about h2 {
+            text-align: center;
+            color: #ff3399;
+            margin-bottom: 39px;
+            font-size: 73px;
+        }
+
+        .about-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Left Box */
+        .about-left {
+            flex: 1;
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .about-left h3 {
+            margin: 0;
+            color: #ffb84d;
+        }
+
+        .traits {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .traits div {
+            background: #262626;
+            padding: 29px;
+            border-radius: 8px;
+            text-align: center;
+            color: #ccc;
+        }
+         .core-values {
+            background: #262626;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            color: #ccc;
+        }
+
+
+        /* Right Box */
+        .about-right {
+            flex: 2;
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 25px;
+        }
+
+        .about-right p {
+            color: #bbb;
+            line-height: 3.6;
+        }
+
+        /* Core Values */
+        .core-values {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .core-values div {
+            background: #262626;
+            padding: 15px;
+            border-radius: 8px;
+            color: #ccc;
+        }
+
+        /* Responsive */
+        @media(max-width:900px) {
+            .about-container {
+                flex-direction: column;
+            }
+        }
+
+        .close-btn {
+            text-align: center;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background:blueviolet;
+            color: white;
+            text-decoration: none;
+            border-bottom: 5px;
+        
+            justify-content: space-between;
+            font-size: 75px;
+
+        }
+    </style>
+</head>
+
+<body>
+     <header>
+        <nav>
+            <div class="left">Deepali's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="project.html">project</a></li>
+                    <li><a href="/">Certificate</a></li>
+                    <li><a href="Contact.html">contact</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+   
+   
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+
+        <div class="about-container">
+            <!-- Left Card -->
+            <div class="about-left">
+                <h3>Deepali shukla</h3>
+                <p style="color:#aaa;">Full-Stack Developer</p>
+                <div class="traits">
+                    <div>Growth</div>
+                    <div>Innovation</div>
+                    <div>Teamwork</div>
+                    <div>Vision</div>
+                </div>
+            </div>
+
+            <!-- Right Card -->
+            <div class="about-right">
+                <p>
+                    Hello! I'm Deepali shukla, a passionate Full-Stack Developer who thrives on
+                    building clean, efficient, and visually engaging websites and applications.
+                </p>
+                <p>
+                    I enjoy blending creativity with functionality to deliver modern web experiences.
+                    I'm always exploring the latest technologies to stay ahead in this fast-paced field.
+                </p>
+                <p>
+                    When I'm not coding, you’ll find me exploring design inspiration, contributing
+                    to open-source projects, or leveling up my skills.
+                </p>
+
+
+                <div class="core-values">
+                    <b>Mission</b><br> Build impactful solutions
+                    <b>Focus</b><br> Clean & scalable code
+                    <b>Values</b><br> Creativity, Empathy, Responsibility
+                </div>
+
+            </div>
+         
+        </div>
+
+    </section>
+  
+
+</body>
+
+</html>

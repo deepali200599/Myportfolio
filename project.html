@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Projects</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0f1a;
+      color: #fff;
+    }
+        nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background: rgb(12, 12, 122);
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(188, 188, 209);
+    font-size: 1.04rem;
+}
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 2.2rem;
+      color: #00c8ff;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      padding: 40px 60px;
+      justify-items: center;
+    }
+
+    .project-card {
+      background: #11182a;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
+      padding: 25px;
+      width: 100%;
+      max-width: 340px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0, 255, 255, 0.2);
+    }
+
+    .project-icon {
+      font-size: 2rem;
+      color: #00c8ff;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .project-title {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .project-desc {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #ccc;
+      min-height: 50px;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn {
+      text-decoration: none;
+      border: 1px solid #00c8ff;
+      color: #00c8ff;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: all 0.3s;
+      font-size: 0.9rem;
+    }
+
+    .btn:hover {
+      background: #00c8ff;
+      color: #0a0f1a;
+    }
+  </style>
+</head>
+<body>
+     <header>
+        <nav>
+            <div class="left">Deepali's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="project.html">project</a></li>
+                    <li><a href="/">Certificate</a></li>
+                    <li><a href="Contact.html">contact</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+  <h1>My Projects</h1>
+
+  <div class="projects-container" id="projects-list">
+    <!-- Projects will load here via JavaScript -->
+  </div>
+
+  <script>
+    const projects = [
+      // {
+      //   icon: "🧮",
+      //   title: "Number System Converter",
+      //   desc: "A Java-based number system converter and calculator with an easy-to-use interface.",
+      //   github: "#",
+      //   live: "#"
+      // },
+    //   {
+    //     icon: "🛒",
+    //     title: "Grocery Shopping Webapp",
+    //     desc: "A full-stack grocery shopping web app with cart and admin panel.",
+    //     github: "#",
+    //     live: "#"
+    //   },
+      {
+        icon: "💬",
+        title: "Chat Application",
+        desc: "A real-time chat app made using Java (Socket programming).",
+        github: "https://github.com/deepali200599/Chatting_Application",
+        live: "#"
+      },
+           {
+         icon: "🛒📦",
+         title: "Amazon.com Clone",
+         desc: "A simple Amazon Clone built using HTML, CSS and JavaScript. This project recreates the basic UI and layout of the Amazon shopping website including homepage, product cards, navigation bar and footer.",
+         github: "https://github.com/deepali200599/AmazonClone",
+         live: "https://amazonw.netlify.app/"
+      },
+
+      {
+        icon: "🏥",
+        title: "Hospital Website",
+        desc: "Hospital website for online doctor and admin using Node.js and Tailwind CSS.",
+        github: "#",
+        live: "#"
+      },
+      {
+        icon: "🏫",
+        title: "Stock Management",
+        desc: "Manages Products Stock for a Store java ,Swing,AWT,JDBC,MySql",
+        github: "https://github.com/deepali200599/StockManagement_System",
+        live: "#"
+      },
+      {
+        icon: "🧠",
+        title: "Quiz App",
+        desc: "Quiz app with dynamic feedback and score display.",
+        github: "https://github.com/deepali200599/Quiz_Application",
+        live: "#"
+      },
+       {
+         icon: "🏠",
+       title: "Car ShowRoom System",
+         desc: "manage car inventory, customer details, and sales records in a structured .",
+         github: "https://github.com/deepali200599/Car_showroom_project",
+         live: "#"
+       },
+      {
+        icon: "📚",
+        title: "Car Rental System",
+        desc: " car booking, returning, customer details management, and price calculation..",
+        github: "https://github.com/deepali200599/CarRentalSystem",
+        live: "#"
+      },
+    //   {
+    //     icon: "✈️",
+    //     title: "Travel Agency Website",
+    //     desc: "Travel agency site to plan journeys with online package selection.",
+    //     github: "#",
+    //     live: "#"
+    //   },
+      {
+        icon: "⭕",
+        title: "Tic Tac Toe",
+        desc: "A simple two-player Tic Tac Toe game with winning logic.",
+        github: "https://github.com/deepali200599/Tic_Tac_Toe_Game",
+        live: "#"
+      }
+    ];
+
+    const container = document.getElementById("projects-list");
+
+    projects.forEach(p => {
+      const card = document.createElement("div");
+      card.classList.add("project-card");
+      card.innerHTML = `
+        <div class="project-icon">${p.icon}</div>
+        <div class="project-title">${p.title}</div>
+        <div class="project-desc">${p.desc}</div>
+        <div class="buttons">
+          <a href="${p.github}" class="btn" target="_blank">GitHub</a>
+          <a href="${p.live}" class="btn" target="_blank">View Live</a>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>
