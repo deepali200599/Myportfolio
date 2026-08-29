@@ -1,13 +1,11 @@
 document.getElementById("messageForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
+const name = document.getElementById("name").value.trim();
 
-  if (name && email && message) {
-    alert(`Thank you, ${name}! Your message has been sent successfully.`);
-    this.reset();
-  } else {
-    alert("Please fill out all fields before sending.");
-  }
+if (!name) {
+e.preventDefault();
+alert("Please enter your name.");
+return;
+}
+
+alert(`Thank you, ${name}! Your message is being sent.`);
 });
